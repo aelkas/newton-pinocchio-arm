@@ -55,7 +55,7 @@ Warp picks CUDA automatically when a driver is present.
 - `verify_claims.py`: experiments that test the causal claims of this README
 - `viz.py`: Meshcat viewer
 
-## Step 0: is Newton simulating the same arm as Pinocchio?
+## Beforehand, is Newton simulating the same arm as Pinocchio?
 
 - **Same instant:** Newton's one-step acceleration matches Pinocchio's `aba` to a median relative error of 3e-6, which is float32 rounding.
 - **Free swing:** first-order convergence (slope 1.01) from dt = 1e-2 down to 5e-5 s, with about 1.8e-3 rad error after 1 s at dt = 1e-3. The float32 floor is not reached in that range.
